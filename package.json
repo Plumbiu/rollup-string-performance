@@ -1,0 +1,41 @@
+{
+  "name": "rollup-string-performance",
+  "version": "0.0.1",
+  "description": "transfrom startsWith and endsWith to one char compare",
+  "homepage": "https://github.com/Plumbiu/rollup-string-performance#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Plumbiu/rollup-string-performance.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Plumbiu/rollup-string-performance/issues"
+  },
+  "main": "dist/index.js",
+  "types": "index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "rollup --config"
+  },
+  "keywords": [
+    "rollup",
+    "plugin",
+    "performance",
+    "string",
+    "es6",
+    "startsWith",
+    "endsWith"
+  ],
+  "author": "Plumbiu",
+  "license": "MIT",
+  "dependencies": {
+    "acorn-walk": "^8.3.1",
+    "magic-string": "^0.30.5"
+  },
+  "devDependencies": {
+    "@plumbiu/eslint-config": "^0.2.0",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@types/node": "^20.10.4",
+    "eslint": "^8.55.0",
+    "rollup": "^4.7.0"
+  }
+}
