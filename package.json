@@ -18,7 +18,8 @@
     "index.d.ts"
   ],
   "scripts": {
-    "build": "rollup --config"
+    "build": "rollup --config",
+    "test": "rollup --config test/rollup.config.js"
   },
   "keywords": [
     "rollup",
