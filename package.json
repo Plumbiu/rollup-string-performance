@@ -13,6 +13,10 @@
   "main": "dist/index.js",
   "types": "index.d.ts",
   "type": "module",
+  "files": [
+    "dist",
+    "index.d.ts"
+  ],
   "scripts": {
     "build": "rollup --config"
   },
