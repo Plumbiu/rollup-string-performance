@@ -1,6 +1,6 @@
 {
   "name": "rollup-string-performance",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "transfrom startsWith and endsWith to one char compare",
   "homepage": "https://github.com/Plumbiu/rollup-string-performance#readme",
   "repository": {
@@ -18,8 +18,8 @@
     "index.d.ts"
   ],
   "scripts": {
-    "build": "rollup --config",
-    "test": "rollup --config test/rollup.config.js"
+    "build": "rollup --config --configPlugin @rollup/plugin-typescript",
+    "test": "rollup --config test/rollup.config.js "
   },
   "keywords": [
     "rollup",
@@ -33,14 +33,18 @@
   "author": "Plumbiu",
   "license": "MIT",
   "dependencies": {
+    "@rollup/pluginutils": "^5.1.0",
     "acorn-walk": "^8.3.1",
     "magic-string": "^0.30.5"
   },
   "devDependencies": {
     "@plumbiu/eslint-config": "^0.2.0",
     "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-typescript": "^11.1.5",
     "@types/node": "^20.10.4",
     "eslint": "^8.55.0",
-    "rollup": "^4.7.0"
+    "rollup": "^4.7.0",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3"
   }
 }
